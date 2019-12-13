@@ -1,9 +1,9 @@
 {
-  "name": "inputfile",
+  "name": "improved-file-input",
   "version": "0.1.0",
-  "description": "A simple file input library",
+  "description": "A simple file input library to expand the functionality of the HTML5 file input",
   "license": "MIT",
-  "repository": "therealpadster/inputfile",
+  "repository": "therealpadster/improved-file-input",
   "main": "index.js",
   "keywords": [
     "input",
