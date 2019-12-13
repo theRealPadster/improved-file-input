@@ -1,0 +1,13 @@
+{
+  "name": "inputfile",
+  "version": "0.1.0",
+  "description": "A simple file input library",
+  "license": "MIT",
+  "repository": "therealpadster/inputfile",
+  "main": "index.js",
+  "keywords": [
+    "input",
+    "file",
+    "therealpadster"
+  ]
+}
