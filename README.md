@@ -1,7 +1,7 @@
 # improved-file-input
 
-[![npm (scoped)](https://img.shields.io/npm/v/@therealpadster/inputfile.svg)](https://www.npmjs.com/package/@therealpadster/inputfile)
-![npm bundle size](https://img.shields.io/bundlephobia/min/@therealpadster/inputfile?label=minified%20size)
+[![npm (scoped)](https://img.shields.io/npm/v/improved-file-input.svg)](https://www.npmjs.com/package/improved-file-input)
+![npm bundle size](https://img.shields.io/bundlephobia/min/improved-file-input?label=minified%20size)
 
 A simple file input library to expand the functionality of the HTML5 file input.
 
