@@ -8,7 +8,7 @@
 class InputFile {
   constructor(input, MAX_FILES = 1) {
     this.input = input;
-    this.MAX_FILES = MAX_FILES;
+    this.MAX_FILES = input.dataset.max ? parseInt(input.dataset.max) : MAX_FILES;
     this.files = [];
 
     // Multiple files
