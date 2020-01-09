@@ -4,7 +4,7 @@
   "description": "A simple file input library to expand the functionality of the HTML5 file input",
   "license": "MIT",
   "repository": "therealpadster/improved-file-input",
-  "main": "index.js",
+  "main": "src/index.js",
   "keywords": [
     "input",
     "file",
