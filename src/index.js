@@ -86,6 +86,9 @@ class InputFile {
       label.classList.remove('has-file');
       labelText.innerHTML = label.dataset.original;
     }
+
+    // Reset file input
+    this.input.value = null;
   }
 
   changeListenerMultiple() {
@@ -102,6 +105,9 @@ class InputFile {
     else {
       console.log('nothing added');
     }
+
+    // Reset file input
+    this.input.value = null;
   }
 
   removeFiles(e) {
@@ -110,7 +116,7 @@ class InputFile {
     // Multiple files
     if (this.MAX_FILES > 1) {
       const li = e.currentTarget.closest('.inputfile__listitem');
-      const i = li.dataset.index;
+      const i = parseInt(li.dataset.index);
       const list = e.currentTarget.closest('.inputfile__list');
       this.files.splice(i, 1);
       list.removeChild(li);
