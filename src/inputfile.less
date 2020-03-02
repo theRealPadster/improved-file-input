@@ -12,103 +12,85 @@
   z-index: -1;
 }
 
-.inputfile + label {
-  // .font--form;
-  // background: url('/img/backgrounds/button-wood-texture.jpg') ~"center center / auto 170px" no-repeat;
-  // display: inline-block;
-  // margin-bottom: 20px;
-  // width: 285px;
-  // padding: 11px 0;
-  // cursor: pointer;
-  // text-align: center;
-}
-
-.inputfile:focus + label {
-  // outline: 1px dotted #000;
-  // outline: -webkit-focus-ring-color auto 5px;
-}
-
 @xpad: 32px;
 @ypad: @xpad / 2;
 
 .file__label {
-    border: 1px solid @black;
-    padding: @ypad @xpad;
-    border-radius: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 1.2em;
+  border: 1px solid @black;
+  padding: @ypad @xpad;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1.2em;
 
-    &.has-file {
-        .file__label-text {
-            &::after {
-                background-image: url('/img/icons/re-take-photo-icon.svg');
-            }
-        }
-
-        & + .file__remove-btn{
-            display: block;
-        }
+  &.has-file {
+    .file__label-text {
+      &::after {
+        background-image: url('/img/icons/re-take-photo-icon.svg');
+      }
     }
+
+    & + .file__remove-btn{
+      display: block;
+    }
+  }
 }
 
 .file__label-text{
-    color: @black;
-    font-weight: 400;
-    font-size: 1.2em;
-    position: relative;
+  color: @black;
+  font-weight: 400;
+  font-size: 1.2em;
+  position: relative;
 
-    &:hover, &:focus {
-      text-decoration: underline;
+  &:hover, &:focus {
+    text-decoration: underline;
   }
 
-    &::after{
-        content: '';
-        display: block;
-        width: 32px;
-        height: 32px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
-
-        background-image: url('assets/plus-white.svg');
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+  &::before, &::after {
+    position: absolute;
+    top: 0;
+    right: @closeBtnSize/2;
+    content: '';
+    height: @closeBtnSize;
+    max-height: 100%;
+    width: 2px;
+    background-color: #333;
+  }
+  &::after {
+    transform: rotate(90deg);
+  }
 }
 
 @closeBtnSize: 24px;
 
 // 'X' to remove file
 .file__remove-btn {
-    -webkit-appearance: none;
-    border: none;
-    background: transparent;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    padding: @closeBtnSize/2;
-    display: block;
+  -webkit-appearance: none;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  padding: @closeBtnSize/2;
+  display: block;
 
-    &::before, &::after {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      content: '';
-      height: 100%;
-      width: 2px;
-      background-color: #333;
-    }
-    &::before {
-      transform: rotate(45deg);
-    }
-    &::after {
-      transform: rotate(-45deg);
-    }
+  &::before, &::after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: '';
+    height: 100%;
+    width: 2px;
+    background-color: #333;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .inputfile__list {
