@@ -13,10 +13,12 @@ class InputFile {
 
     // Multiple files
     if (MAX_FILES > 1) {
+      input.setAttribute('multiple','');
       input.addEventListener('change', (e) => {
         this.changeListenerMultiple();
       });
     } else { // Single file
+      input.removeAttribute('multiple');
       input.addEventListener('change', (e) => {
         this.changeListenerSingle();
       });
