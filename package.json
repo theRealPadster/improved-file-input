@@ -1,6 +1,6 @@
 {
   "name": "improved-file-input",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A simple file input library to expand the functionality of the HTML5 file input",
   "license": "MIT",
   "repository": "therealpadster/improved-file-input",
